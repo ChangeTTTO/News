@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/oneFragment">
+
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.pn.bottomnavigationdemo.oneFragment"
+        android:label="旋转"
+        tools:layout="@layout/fragment_one" />
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.pn.bottomnavigationdemo.twoFragment"
+        android:label="缩放"
+        tools:layout="@layout/fragment_two" />
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.pn.bottomnavigationdemo.threeFragment"
+        android:label="移动"
+        tools:layout="@layout/fragment_three" />
+</navigation>
