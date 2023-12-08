@@ -13,13 +13,18 @@
         android:theme="@style/Theme.News"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".splash.SplashActivity"
             android:exported="true">
+            <!--   <intent-filter>   标记为启动界面-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">  <!--是否可以被其他应用的组件调用或与之交互 -->
         </activity>
     </application>
 
