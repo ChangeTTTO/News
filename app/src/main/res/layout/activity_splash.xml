@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash.SplashActivity">
+    tools:context=".component.splash.SplashActivity">
 
 
 
@@ -17,8 +17,8 @@
         android:layout_height="match_parent"/>
 <!--    版权信息-->
 <TextView
-    android:id="@+id/copyright"
     android:visibility="gone"
+    android:id="@+id/copyright"
     android:text="Copyright @pn"
     android:layout_marginBottom="20dp"
     android:layout_centerHorizontal="true"
