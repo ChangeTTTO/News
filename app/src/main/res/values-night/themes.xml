@@ -1,5 +1,52 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.News" parent="Theme.Material3.DayNight.NoActionBar">
-           </style>
+    <!--region Activity样式-->
+    <style name="SuperUI.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--背景色-->
+        <item name="android:colorBackground">@color/black15</item>
+
+        <!--主色调，按钮默认填充颜色-->
+        <item name="colorPrimary">@color/primary</item>
+
+        <!-- 次色调，例如floatActionButton背景，SeekBar进度颜色 -->
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorLightWhite">@color/black183</item>
+
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- 分割线颜色 -->
+        <item name="colorDivider">@color/black33</item>
+
+        <!-- tab bar控件背景 -->
+        <item name="colorTabBar">?android:attr/colorBackground</item>
+
+        <!-- 分割线 -->
+<!--        <item name="android:listDivider">@drawable/shape_divider</item>-->
+
+        <!-- 状态栏颜色 -->
+        <item name="android:statusBarColor" tools:targetApi="l">?android:attr/colorBackground</item>
+
+        <!--Toolbar背景颜色-->
+        <item name="colorToolbar">@color/black17</item>
+
+        <item name="colorOnTextSecondary">@color/black80</item>
+
+        <!--侧滑背景-->
+        <item name="colorSlideBackground">?android:attr/colorBackground</item>
+
+        <item name="colorSurface">@color/black25</item>
+
+        <!--colorSurface点击颜色-->
+        <item name="colorSurfaceClick">@color/black322</item>
+    </style>
+
+    <style name="SuperUI.NoActionBar.Grey">
+        <!--背景色-->
+        <item name="android:colorBackground">@color/black15</item>
+
+        <!-- 状态栏颜色 -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black25</item>
+    </style>
+    <!--endregion-->
 </resources>
