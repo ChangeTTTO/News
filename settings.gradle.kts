@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "News"
 include(":app")
- 
+include(":Super-kt")

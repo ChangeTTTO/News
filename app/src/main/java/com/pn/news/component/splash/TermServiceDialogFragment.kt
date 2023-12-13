@@ -1,26 +1,17 @@
 package com.pn.news.component.splash
 
-import android.os.Bundle
-import android.os.Process
 import android.text.Html
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.widget.Button
-import android.widget.TextView
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.FragmentManager
-import com.google.android.material.button.MaterialButton
 import com.pn.SuperUi.util.ScreenUtil
 import com.pn.SuperUi.util.SuperProcessUtil
 import com.pn.SuperUi.util.SuperTextUtil
-import com.pn.news.Fragment.BaseCommonFragment
-import com.pn.news.Fragment.BaseDialogFragment
 import com.pn.news.Fragment.BaseViewModelDialogFragment
 import com.pn.news.R
 import com.pn.news.databinding.FragmentDialogTermServiceBinding
-import com.pn.news.utils.DefaultPreferenceUtil
 
 /**
  * 服务隐私协议对话框fragment
