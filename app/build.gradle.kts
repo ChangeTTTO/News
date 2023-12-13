@@ -1,3 +1,4 @@
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -33,10 +34,17 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    //开启视图绑定，代替findViewById
+    buildFeatures {
+        viewBinding= true
+    }
 }
 
 dependencies {
     implementation("com.qmuiteam:qmui:2.0.1") //ui框架
+    //权限框架
+    //https://github.com/guolindev/PermissionX
+    implementation ("com.guolindev.permissionx:permissionx:1.7.1")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.8.0")
