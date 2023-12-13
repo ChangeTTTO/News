@@ -30,6 +30,7 @@ class SplashActivity : BaseViewModelActivity<ActivitySplashBinding>() {
             //状态栏文字为白色
             QMUIStatusBarHelper.setStatusBarDarkMode(this)
         }
+
     }
 
     override fun initDatum() {

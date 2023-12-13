@@ -1,4 +1,4 @@
-package com.ixuea.k.util
+package com.pn.super_kt.util
 
 object StringUtil {
     /**
@@ -16,7 +16,7 @@ object StringUtil {
      * @return
      */
     fun isPassword(value: String): Boolean {
-        return value.length >= 6 && value.length <= 15
+        return value.length in 6..15
     }
 
     fun formatMessageCount(data: Int): String {
