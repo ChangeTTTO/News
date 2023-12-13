@@ -18,6 +18,7 @@ import com.pn.SuperUi.util.SuperTextUtil
 import com.pn.news.Fragment.BaseCommonFragment
 import com.pn.news.Fragment.BaseDialogFragment
 import com.pn.news.R
+import com.pn.news.utils.DefaultPreferenceUtil
 
 /**
  * 服务隐私协议对话框fragment
