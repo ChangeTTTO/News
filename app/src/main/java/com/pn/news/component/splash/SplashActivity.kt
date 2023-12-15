@@ -1,11 +1,13 @@
 package com.pn.news.component.splash
 
 import android.Manifest
+import android.content.Intent
 import android.os.Build
 import android.util.Log
 import com.pn.news.activity.BaseViewModelActivity
 import com.permissionx.guolindev.PermissionX
 import com.pn.SuperUi.util.SuperDarkUtil
+import com.pn.news.component.guide.GuideActivity
 import com.pn.news.databinding.ActivitySplashBinding
 import com.pn.news.utils.DefaultPreferenceUtil
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper
@@ -93,6 +95,7 @@ class SplashActivity : BaseViewModelActivity<ActivitySplashBinding>() {
 
     private fun prepareNext() {
 
+        startActivityAfterFinishThis(GuideActivity::class.java)
     }
 
 

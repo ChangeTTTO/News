@@ -71,6 +71,10 @@
             android:name=".MainActivity"
             android:exported="false">  <!--是否可以被其他应用的组件调用或与之交互 -->
         </activity>
+        <activity
+            android:name=".component.guide.GuideActivity"
+            android:exported="false">  <!--是否可以被其他应用的组件调用或与之交互 -->
+        </activity>
     </application>
 
 </manifest>

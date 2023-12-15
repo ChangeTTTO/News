@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--在主题中对应item.name-->
 <resources>
     <!--浅白色，功能是根据主题自动变化的白色，白天：纯白，夜间：浅一点的白色-->
     <attr name="colorLightWhite" format="color" />
