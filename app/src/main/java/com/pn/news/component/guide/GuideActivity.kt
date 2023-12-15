@@ -3,6 +3,8 @@ package com.pn.news.component.guide
 import android.util.Log
 import com.pn.news.activity.BaseViewModelActivity
 import com.pn.news.databinding.ActivityGuideBinding
+import com.pn.news.utils.PreferenceUtil
+
 
 
 /**
@@ -15,9 +17,11 @@ class GuideActivity : BaseViewModelActivity<ActivityGuideBinding>() {
         super.initListeners()
         binding.loginOrRegister.setOnClickListener{
             Log.d(TAG, "initListeners: 点击了注册登录")
+            PreferenceUtil.setShowGuide(false)
         }
         binding.experienceNow.setOnClickListener{
             Log.d(TAG, "initListeners: 点击了立即体验")
+            PreferenceUtil.setShowGuide(false)
         }
     }
     companion object{

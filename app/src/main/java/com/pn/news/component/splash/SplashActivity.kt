@@ -10,6 +10,7 @@ import com.pn.SuperUi.util.SuperDarkUtil
 import com.pn.news.component.guide.GuideActivity
 import com.pn.news.databinding.ActivitySplashBinding
 import com.pn.news.utils.DefaultPreferenceUtil
+import com.pn.news.utils.PreferenceUtil
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper
 
 
@@ -94,8 +95,12 @@ class SplashActivity : BaseViewModelActivity<ActivitySplashBinding>() {
     }
 
     private fun prepareNext() {
-
-        startActivityAfterFinishThis(GuideActivity::class.java)
+            if(PreferenceUtil.isShowGuide()){
+                //显示引导界面
+                startActivityAfterFinishThis(GuideActivity::class.java)
+                return
+            }
+                //跳转到下一个界面
     }
 
 
