@@ -95,11 +95,12 @@ class SplashActivity : BaseViewModelActivity<ActivitySplashBinding>() {
     }
 
     private fun prepareNext() {
-            if(PreferenceUtil.isShowGuide()){
+           /* if(PreferenceUtil.isShowGuide()){
                 //显示引导界面
-                startActivityAfterFinishThis(GuideActivity::class.java)
+
                 return
-            }
+            }*/
+        startActivityAfterFinishThis(GuideActivity::class.java)
                 //跳转到下一个界面
     }
 

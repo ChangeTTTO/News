@@ -79,7 +79,7 @@ class TermServiceDialogFragment:BaseViewModelDialogFragment<FragmentDialogTermSe
         fun show(fragmentManager: FragmentManager ,onAgreementClickListener: View.OnClickListener) {
             val dialogFragment = TermServiceDialogFragment()
             dialogFragment.onAgreementClickListener=onAgreementClickListener
-
+            //显示Fragment
             dialogFragment.show(fragmentManager,"TermServiceDialogFragment")
         }
     }

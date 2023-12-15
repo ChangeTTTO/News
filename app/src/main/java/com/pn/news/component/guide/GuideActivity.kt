@@ -1,6 +1,7 @@
 package com.pn.news.component.guide
 
 import android.util.Log
+import com.pn.news.R
 import com.pn.news.activity.BaseViewModelActivity
 import com.pn.news.databinding.ActivityGuideBinding
 import com.pn.news.utils.PreferenceUtil
@@ -13,6 +14,24 @@ import com.pn.news.utils.PreferenceUtil
  * https://github.com/bingoogolapple/BGABanner-Android
  */
 class GuideActivity : BaseViewModelActivity<ActivityGuideBinding>() {
+    private lateinit var adapter: GuideAdapter
+    override fun initDatum() {
+        super.initDatum()
+        //创建适配器
+         adapter = GuideAdapter(this, supportFragmentManager)
+        //设置适配器到GuideActivity
+        binding.list.adapter=adapter
+        //准备数据
+        var datum: MutableList<Int> = ArrayList()
+        datum.add(R.drawable.guide1)
+        datum.add(R.drawable.guide2)
+        datum.add(R.drawable.guide3)
+        datum.add(R.drawable.guide4)
+        datum.add(R.drawable.guide5)
+
+        //设置数据到适配器
+        adapter.setDatum(datum)
+    }
     override fun initListeners() {
         super.initListeners()
         binding.loginOrRegister.setOnClickListener{
