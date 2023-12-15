@@ -28,11 +28,16 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "19"
     }
     //开启视图绑定，代替findViewById
     buildFeatures {
         viewBinding= true
     }
 
+    dependencies {
+        // https://mvnrepository.com/artifact/me.relex/circleindicator
+        implementation("me.relex:circleindicator:2.1.6")
+
+    }
 }

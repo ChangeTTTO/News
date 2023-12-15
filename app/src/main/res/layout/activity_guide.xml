@@ -18,12 +18,12 @@
        android:layout_weight="1" />
 
    <!--指示器-->
-  <!-- <me.relex.circleindicator.CircleIndicator
+   <me.relex.circleindicator.CircleIndicator
        android:id="@+id/indicator"
        android:layout_width="match_parent"
        android:layout_height="@dimen/guide_indicator_height"
        pn:ci_drawable="@drawable/shape_color_primary"
-       pn:ci_drawable_unselected="@drawable/shape_circle_light_grey" />-->
+       pn:ci_drawable_unselected="@drawable/shape_circle_light_grey" />
 
    <!--region 按钮容器-->
    <LinearLayout
