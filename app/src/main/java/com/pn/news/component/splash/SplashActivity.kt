@@ -7,6 +7,7 @@ import android.util.Log
 import com.pn.news.activity.BaseViewModelActivity
 import com.permissionx.guolindev.PermissionX
 import com.pn.SuperUi.util.SuperDarkUtil
+import com.pn.news.MainActivity
 import com.pn.news.component.guide.GuideActivity
 import com.pn.news.databinding.ActivitySplashBinding
 import com.pn.news.utils.DefaultPreferenceUtil
@@ -95,13 +96,13 @@ class SplashActivity : BaseViewModelActivity<ActivitySplashBinding>() {
     }
 
     private fun prepareNext() {
-           /* if(PreferenceUtil.isShowGuide()){
+            if(PreferenceUtil.isShowGuide()){
                 //显示引导界面
-
+                startActivityAfterFinishThis(GuideActivity::class.java)
                 return
-            }*/
-        startActivityAfterFinishThis(GuideActivity::class.java)
+            }
                 //跳转到下一个界面
+        startActivityAfterFinishThis(MainActivity::class.java)
     }
 
 

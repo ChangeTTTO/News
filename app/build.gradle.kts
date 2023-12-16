@@ -37,7 +37,13 @@ android {
 
     dependencies {
         // https://mvnrepository.com/artifact/me.relex/circleindicator
+        //指示器依赖
         implementation("me.relex:circleindicator:2.1.6")
 
     }
+}
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.8.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 }

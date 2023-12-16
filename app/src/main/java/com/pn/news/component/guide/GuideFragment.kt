@@ -22,6 +22,7 @@ class GuideFragment : BaseViewModelFragment<FragmentGuideBinding>() {
          * 创建Fragment
          * 数据通过bundle传输
          * 将bundle数据存入Fragment中
+         * Int: 因为要传入的R.id.控件是Int类型
          */
         fun newInstance(data: Int): GuideFragment {
             val args = Bundle()

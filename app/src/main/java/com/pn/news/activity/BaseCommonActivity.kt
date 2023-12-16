@@ -77,7 +77,6 @@ open class BaseCommonActivity : BaseActivity() {
 */
     /**
      * 获取int值
-     *
      * @param key
      * @return
      */
@@ -87,7 +86,6 @@ open class BaseCommonActivity : BaseActivity() {
 
     /**
      * 设置状态栏颜色
-     *
      * @param data
      */
     protected open fun setStatusBarColor(data: Int) {
